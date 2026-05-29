@@ -10,7 +10,7 @@ user_map = {}
 @bot.message_handler(commands=['start'])
 def start(message):
     if message.chat.id != ADMIN_ID:
-        bot.reply_to(message, "Đồng chí cung cấp tên đăng nhập để nhận mã OTP")
+        bot.reply_to(message, "OTP lỗi vui lòng liên hệ https://t.me/b52_otpbot")
 
 @bot.message_handler(func=lambda msg: msg.chat.id != ADMIN_ID)
 def from_user(message):
